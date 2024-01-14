@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clerk</title>
+</head>
+
+<head>
+  <meta charsetname="UTF-8">
+  <meta charsetname="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+  <link rel="stylesheet" href="assets/estilos/home.css">
+  <link rel="stylesheet" href="/src/assets/estilos/clerk.css">
+
+</head>
+
+<body>
+  <header>
+    <nav class="nav1">
+      <p class="logo">Clerk</p>
+      <ul class="listmenu">
+        <li><a href="#">Exemplo</a></li>
+        <li><a href="#">Exemplo</a></li>
+        <li><a href="#">Exemplo</a></li>
+        <li><a href="#">Exemplo</a></li>
+        <li class="liclerk"><button id="btn-entrar" id="user-button" class="buttonauth"
+            onclick="Clerk.openSignIn()">Entrar</a></button></li>
+        <li class="liclerk"><button id="btn-cadastrar" class="buttonauth"
+            onclick="Clerk.openSignUp()">Cadastrar</a></button></li>
+        </div>
+      </ul>
+
+      <span class="material-symbols-outlined" id="iconMenu">
+        menu
+      </span>
+    </nav>
+
+    <div class="desktop-menu">
+
+      <p id="logo-desktop"><strong>Clerk</strong></p>
+      <ul class="desktop-listmenu">
+        <li><a href="#">Exemplo</a></li>
+        <li><a href="#">Exemplo</a></li>
+        <li><a href="#">Exemplo</a></li>
+        <li><a href="#">Exemplo</a></li>
+      </ul>
+
+      <div class="menu-conta">
+
+        <ul class="list-conta">
+          <div id="user-button"></div>
+          <div id="auth-links">
+            <li class="liclerk"><button id="btn-entrar" id="user-button" class="buttonauth"
+                onclick="Clerk.openSignIn()">Entrar</a></button></li>
+            <li class="liclerk"><button id="btn-cadastrar" class="buttonauth"
+                onclick="Clerk.openSignUp()">Cadastrar</a></button></li>
+          </div>
+        </ul>
+      </div>
+    </div>
+
+    <script src="../clerk-js-starter/src/script.js"></script>
+    <script src="./index.js"></script>
+
+</body>
+
+</html>

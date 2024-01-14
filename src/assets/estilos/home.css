@@ -1,0 +1,265 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;700&display=swap");
+
+:root {
+  --blue: #4d77ff;
+  --green: #45c1ab;
+  --grey: #1b1b14;
+  --black: #040403;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.desktop-menu {
+  display: none;
+  position: relative;
+}
+
+.desktop-menu a:hover {
+  color: var(--green);
+  transition: 300ms;
+}
+
+.desktop-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.desktop-listmenu {
+  position: absolute;
+  left: 240px;
+  top: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.material-symbols-outlined {
+  cursor: pointer;
+}
+
+header {
+  background-color: var(--white);
+  height: 100vh;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+.nav1 {
+  position: fixed;
+  left: 5vw;
+  right: 5vw;
+  top: 1.7%;
+  z-index: 200;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90vw;
+  height: 6vh;
+  background-color: #4d77ff;
+  border-radius: 20px;
+  border: 2px solid #4d77ff;
+  font-family: "Inter", sans-serif;
+}
+
+.listmenu {
+  position: fixed;
+  display: flex;
+  top: 0;
+  right: 0;
+  width: 55vw;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  list-style-type: none;
+  font-size: 1.3em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  padding-left: 50px;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in;
+  z-index: 5;
+  font-family: "Poppins", sans-serif;
+  border-radius: 20px;
+
+  padding-left: 10px;
+}
+
+.listmenu.active {
+  transform: translateX(0);
+  background-color: #f4f4f4;
+}
+
+.buttonauth {
+  text-align: center;
+  background-color: #04040300;
+  font-size: 20px;
+}
+
+.listmenu>li>a {
+  text-decoration: none;
+  color: black;
+}
+
+.logo {
+  color: rgb(255, 255, 255);
+  padding-left: 30px;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+#iconMenu {
+  padding-right: 15px;
+  font-size: 1.8em;
+  display: block;
+  color: rgb(255, 255, 255);
+  z-index: 100;
+}
+
+#iconMenu.active {
+  color: var(--blue);
+}
+
+@media (min-width: 1400px) and (max-width: 1800px) {
+  #scroll-icon {
+    display: block;
+  }
+
+  .nav1 {
+    display: none;
+  }
+
+  .desktop-menu {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: block;
+    background-color: #fff;
+    max-width: 1800px;
+    height: 74px;
+    top: 0px;
+    filter: drop-shadow(0px 20px 27px rgba(0, 0, 0, 0.1));
+    font: normal 600 1.1em "Poppins", sans-serif;
+  }
+
+  .desktop-listmenu a {
+    text-decoration: none;
+    color: black;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  .liclerk {
+    display: inline-block;
+    margin-right: 50px;
+  }
+
+  .list-conta {
+    position: absolute;
+    bottom: 0%;
+    top: 2%;
+    left: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 50px;
+    font: normal 600 1.1em "Poppins", sans-serif;
+  }
+
+  .list-conta button {
+    font: normal 600 1em "Poppins", sans-serif;
+  }
+
+  .list-conta a {
+    text-decoration: none;
+    color: black;
+  }
+
+  #btn-entrar {
+    width: 50px;
+    background-color: transparent;
+  }
+
+  #btn-entrar a {
+    color: var(--blue);
+  }
+
+  #btn-entrar a:hover {
+    color: var(--green);
+  }
+
+  #btn-cadastrar {
+    padding: 0;
+    margin: 0;
+    width: 50px;
+    background-color: transparent;
+  }
+
+  .desktop-listmenu a {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  #logo-desktop {
+    position: absolute;
+    top: 19px;
+    left: 20px;
+    font-size: 1.3em;
+    color: var(--blue);
+  }
+
+  #logo-desktop strong {
+    font-weight: 700;
+  }
+
+  #icon-profile {
+    font-size: 35px;
+    color: var(--blue);
+  }
+
+  #icon-profile:hover {
+    color: var(--green);
+    transition: 1s;
+  }
+
+  #manhome {
+    width: 100%;
+    height: 100%;
+  }
+
+  #tituhome {
+    top: 38%;
+    font-size: 3em;
+    color: var(--green);
+  }
+
+  #paragrafohome {
+    top: 46%;
+    width: 600px;
+    font-size: 1.8em;
+  }
+
+  #paragrafohome strong {
+    color: var(--green);
+  }
+
+}
